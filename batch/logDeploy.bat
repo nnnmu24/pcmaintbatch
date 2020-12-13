@@ -64,8 +64,8 @@ rem ‚Ü‚Æ‚ß
 rem ****************
 
 rem set STR_BKUP = find 
-for /f %%i in ('findstr /L /S /I "[HEAD]" %EVENT_REPORT_BKUP_FILE%') do set •Ï”=%%STR_BKUP
-echo %STR_BKUP% >> %LOG_DEPLOY_DST_PATH%\aaa.txt
+rem for /f %%i in ('findstr /L /S /I "[HEAD]" %EVENT_REPORT_BKUP_FILE%') do set •Ï”=%%STR_BKUP
+rem echo %STR_BKUP% >> %LOG_DEPLOY_DST_PATH%\aaa.txt
 
 
 exit /b %EXIT_CODE_NORMAL%
