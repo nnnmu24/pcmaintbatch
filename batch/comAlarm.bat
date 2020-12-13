@@ -1,0 +1,14 @@
+@echo off
+
+rem アラーム通知するサブルーチン
+rem IPメッセンジャーを使用
+
+SETLOCAL ENABLEDELAYEDEXPANSION
+set ALARM_MESSAGE=%ALARM_MESSAGE_MAIN%^
+
+%ALARM_MESSAGE_SUB%
+
+%COM_ALARM_IPMESSENGER% /MSG localhost !ALARM_MESSAGE!
+
+exit /b %EXIT_CODE_NORMAL%
+
